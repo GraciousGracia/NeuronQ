@@ -1,0 +1,16 @@
+import React from 'react'
+import Profilebar from './Profilebar'
+import Stud_sidebar from './Stud_sidebar'
+import logo from '../IMAGES/LOGO.jpg'
+function Schedules() {
+  return (
+    <main className='studpages'>
+        <img src={logo} className='dashlogo'/>
+        <div className='pagebox'>
+            <p className='scheduleheader'>The admin releases schedules of learning activities for every month</p>
+        </div>
+    </main>
+  )
+}
+
+export default Schedules
