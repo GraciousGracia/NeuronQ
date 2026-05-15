@@ -67,9 +67,9 @@ function Studimgsetup() {
     }
   return (
     <main>
-        <img src={logo} style={{marginLeft:'4%',height:'21vh',width:'11%',marginTop:'-15px'}}/>
+        <img src={logo} style={{marginLeft:'4%',height:'21vh',width:'11%',marginTop:'-15px'}} alt='pix'/>
         <p className='setuphead'>Upload your profile photo (Potrait)</p>
-        <img src={image} style={{marginLeft:'39%',marginTop:'25px',height:'40vh',width:'20%',borderRadius:'4px'}}/>
+        <img src={image} style={{marginLeft:'39%',marginTop:'25px',height:'40vh',width:'20%',borderRadius:'4px'}} alt='pix'/>
         <input
             type='file'
             onChange={handlechange}

@@ -2,13 +2,9 @@ import React from 'react'
 import { FaBook,FaCertificate } from 'react-icons/fa'
 import stud2 from '../IMAGES/stud.jpg'
 import { useMediaQuery } from 'react-responsive'
-import { useState } from 'react'
 import {motion} from 'framer-motion'
 function Adds() {
-    const [subject,setsubject] = useState([])
-    const [visible,setvisible] = useState(false)
     const ismobile = useMediaQuery({maxWidth : 767})
-    const istablet = useMediaQuery({minWidth: 768, maxWidth : 1023})
     const iscomputer = useMediaQuery({minWidth : 1023})
     //192.168.243.27
     //set HOST=0.0.0.0&&npm start
@@ -56,7 +52,7 @@ function Adds() {
               viewport={{ once: true }}
               transition={{ duration: 0.9 }}
           >
-              <img src={stud2} className='studimg' style={{display : ismobile ? 'none' : ''}}></img>
+              <img src={stud2} className='studimg' style={{display : ismobile ? 'none' : ''}} alt=''/>
           </motion.div>
       
     </div>

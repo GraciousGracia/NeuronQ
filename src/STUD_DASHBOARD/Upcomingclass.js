@@ -1,13 +1,13 @@
 import React from 'react'
 import logo from '../IMAGES/LOGO.jpg'
-import Activity_bar from './Activity_bar'
-import { FaCalendar } from 'react-icons/fa'
-import { FaClock } from 'react-icons/fa'
+//import Activitybar from './Activitybar'
+//import { FaCalendar } from 'react-icons/fa'
+//import { FaClock } from 'react-icons/fa'
 import { FaVideo } from 'react-icons/fa'
 function Upcomingclass() {
   return (
     <main className='studpages'>
-        <img src={logo} className='dashlogo'/>  
+        <img src={logo} className='dashlogo' alt=''/>  
         <p style={{marginLeft:'30%',fontWeight:'bold',fontSize:'22px'}}>Upcoming classes for your learning track</p>  
         <div className='schedulebox'>
             <div className='class01' style={{marginTop:'7px'}}>

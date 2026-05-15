@@ -1,20 +1,18 @@
 import React, { useState } from 'react'
-import Tutorssidebar from './Tutorssidebar'
-import Tutnotification from './Tutnotification'
-import logo from '../IMAGES/LOGO.jpg'
-import img1 from '../IMAGES/origin1.jpg'
+//import Tutorssidebar from './Tutorssidebar'
+//import Tutnotification from './Tutnotification'
+//import logo from '../IMAGES/LOGO.jpg'
 import img2 from '../IMAGES/origin2.jpg'
 import img3 from '../IMAGES/stud.jpg'
 import img4 from '../IMAGES/studgirl.jpg'
 // import img5 from '../IMAGES/tut15.jpg'
-import img6 from '../IMAGES/tut14 copy.jpg'
 import img7 from '../IMAGES/tut6.jpg'
 import img15 from '../IMAGES/tut15 copy - Copy.jpg'
 import img12 from '../IMAGES/tut12.jpg'
 import img13 from '../IMAGES/smilemedics.jpg'
 import img14 from '../IMAGES/tut14 copy.jpg'
 import img16 from '../IMAGES/tut13 copy.jpg'
-import Perfomform from './Perfomform'
+//import Perfomform from './Perfomform'
 import { FaTimes } from 'react-icons/fa'
 function Tutstudents() {
   const [typevalidate,settypevalidate] = useState('')
@@ -87,7 +85,7 @@ function Tutstudents() {
       setstudentname(studname)
   }
   const switchcontent1 = () => {
-      if(typevalue == '') {
+      if(typevalue === '') {
         settypevalidate('Please select a task type')
       }else {
         settitlebol(!titlebol)
@@ -101,7 +99,7 @@ function Tutstudents() {
   }
 
   const switchcontent2 = () => {
-    if(titlevalue == '') {
+    if(titlevalue === '') {
       settitlevalidate('Please enter task title')
     }else {
       settitlebol(!titlebol)
@@ -112,7 +110,7 @@ function Tutstudents() {
     }
   }
   const switchcontent3 = () => {
-    if(audvalue == '') {
+    if(audvalue === '') {
       setaudiblevalidate('Please select audibility')
     }else {
       setaudbol(!audbol)
@@ -122,7 +120,7 @@ function Tutstudents() {
     }
   }
   const switchcontent4 = () => {
-      if(camvalue == '') {
+      if(camvalue === '') {
         setcameravalidate('Please select camera statues of student')
       }else {
         setcambol(!cambol)
@@ -133,7 +131,7 @@ function Tutstudents() {
   }
     
   let switchcontent5 = () => {
-    if(backvalue == '') {
+    if(backvalue === '') {
       setbackgroundvalidate('Please select a background state')
     }else {
       setbackbol(!backbol)
@@ -144,7 +142,7 @@ function Tutstudents() {
   }
 
   let saveperfomance = () => {
-    if(gradvalue == '') {
+    if(gradvalue === '') {
       setgradevalidate('Please select a background state')
     }else {    
       setgradevalidate('')
@@ -179,7 +177,7 @@ function Tutstudents() {
            {filterdata.length > 0 ? (
               filterdata.map((list) => (
               <li className='studlist'>
-                <img src={list.Image} style={{height:'160px',borderRadius:'50%',width:'60%',marginLeft:'20%',marginTop:'5px'}}/>
+                <img src={list.Image} style={{height:'160px',borderRadius:'50%',width:'60%',marginLeft:'20%',marginTop:'5px'}}  alt=''/>
                 <h1 className='listnametxt'>{list.name}</h1>
                 <h2 className='listconttxt'>{list.Country}</h2>
                 <button className='upstud' onClick={() => showperform(list.name)}>Post update</button>

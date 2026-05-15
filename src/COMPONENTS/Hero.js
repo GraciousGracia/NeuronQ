@@ -20,7 +20,7 @@ function Hero() {
             viewport={{ once: true, amount: 0.3 }}
         >
         <div className='hold'>
-          <img src={logo} style={{height:"33vh",width:"33vh",marginTop:'-50px',marginRight:"70px"}}/> 
+          <img src={logo} style={{height:"33vh",width:"33vh",marginTop:'-50px',marginRight:"70px"}} alt=''/> 
           <div className='holdnavbts'                              >
              <button className='linkbtn' onClick={() => openform('./apply')}>Apply</button>
              <button className='linkbtn'>Sign in</button>

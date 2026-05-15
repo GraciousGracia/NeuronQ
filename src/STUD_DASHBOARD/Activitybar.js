@@ -1,7 +1,7 @@
 import React from 'react'
 import { FaBell,FaSignOutAlt } from 'react-icons/fa'
 import {RiMessage3Fill } from 'react-icons/ri'
-function Activity_bar() {
+function Activitybar() {
 function showopt () {
     alert('ok')
 }
@@ -21,4 +21,4 @@ function showopt () {
   )
 }
 
-export default Activity_bar
+export default Activitybar

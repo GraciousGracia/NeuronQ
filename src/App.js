@@ -2,31 +2,52 @@ import './App.css';
 import "@fontsource/inter/400.css";
 import "@fontsource/inter/700.css";
 import Home from './PAGES/Home';
-import Nav from './COMPONENTS/Nav';
 import Footer from './COMPONENTS/Footer';
-import Viewcourses from './COMPONENTS/Viewcourses';
-import { Route,Router,Routes } from 'react-router-dom';
-import { useState } from 'react'
+import { Route,Routes } from 'react-router-dom';
 import Candapply from './PAGES/Candapply';
-import Courseinfo from './PAGES/Courseinfo';
 import Success from './PAGES/Success';
 import Logsetup from './PAGES/Logsetup';
 import Passsetup from './PAGES/Passsetup';
 import Studimgsetup from './PAGES/Studimgsetup';
 import Profilebar from './STUD_DASHBOARD/Profilebar';
 import Schedules from './STUD_DASHBOARD/Schedules';
-import Stud_sidebar from './STUD_DASHBOARD/Stud_sidebar';
+import Studsidebar from './STUD_DASHBOARD/Studsidebar';
 import Assignment from './STUD_DASHBOARD/Assignment';
 import Payments from './STUD_DASHBOARD/Payments';
 import Projects from './STUD_DASHBOARD/Projects';
 import Revisions from './STUD_DASHBOARD/Revisions';
 import Upcomingclass from './STUD_DASHBOARD/Upcomingclass';
 import Profile from './STUD_DASHBOARD/Profile';
-import Activity_bar from './STUD_DASHBOARD/Activity_bar';
+import Activitybar from './STUD_DASHBOARD/Activitybar';
 import Projectformpage from './STUD_DASHBOARD/Projectformpage';
 import Studentlogin from './PAGES/Studentlogin';
 import Tutstudents from './TUTORS_DASHBOARD/Tutstudents';
 import TutClasses from './TUTORS_DASHBOARD/TutClasses';
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 import Tutschemes from './TUTORS_DASHBOARD/Tutschemes';
 import TutPayments from './TUTORS_DASHBOARD/TutPayments';
 import Tutprofile from './TUTORS_DASHBOARD/Tutprofile';
@@ -61,8 +82,8 @@ function App() {
       {showstudlink && (
         <div>
           <Profilebar/>
-          <Stud_sidebar/>
-          <Activity_bar/>
+          <Studsidebar/>
+          <Activitybar/>
         </div>
       )}
       {showdashlink && (
