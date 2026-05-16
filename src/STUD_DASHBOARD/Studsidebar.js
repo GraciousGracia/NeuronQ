@@ -44,7 +44,7 @@ function Studsidebar() {
             ))}
         </ul>
     </main>
-  )
+     )
 }
 
 export default Studsidebar
